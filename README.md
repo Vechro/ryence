@@ -5,5 +5,5 @@ Alternative collection manifests for [Scoop](https://scoop.sh), the Windows comm
 How do I install these manifests?
 ---------------------------------
 
-First you must add the bucket `scoop bucket add https://github.com/vechro/ryence.git`.
+First you must add the bucket `scoop bucket add ryence https://github.com/vechro/ryence.git`.
 Then you can `scoop install <manifest>` for any manifest in this bucket.
