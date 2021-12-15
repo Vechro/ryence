@@ -1,0 +1,38 @@
+{
+    "##": [
+        "Is missing Google API keys, for whatever reason",
+        "Will crash immediately if launched on a path containing a symlink, no idea why",
+        "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/useful_urls.md",
+        "https://chromium.woolyss.com/"
+    ],
+    "version": "948421",
+    "description": "An open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.",
+    "homepage": "https://www.chromium.org",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F948421%2Fchrome-win.zip?alt=media",
+            "hash": "7cbd82c652b3db63b38b5e521e6220efb1708d7a7b2ea0900032df3e16636358"
+        }
+    },
+    "extract_dir": "chrome-win",
+    "bin": "chrome.exe",
+    "checkver": {
+        "url": "https://omahaproxy.appspot.com/all.json",
+        "jsonpath": "$[?(@.os=='win64')].versions[?(@.channel=='dev')].branch_base_position"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F$version%2Fchrome-win.zip?alt=media"
+            }
+        }
+    },
+    "notes": [
+        "You will have to either generate or disable API keys to get rid of the popup regarding it.",
+        "To disable them, set the following environment variables (more info: https://chromium.woolyss.com/#google-api-keys):",
+        "GOOGLE_API_KEY=false",
+        "GOOGLE_DEFAULT_CLIENT_ID=false",
+        "GOOGLE_DEFAULT_CLIENT_SECRET=false"
+    ]
+}
