@@ -1,7 +1,5 @@
 {
     "##": [
-        "Is missing Google API keys, for whatever reason",
-        "Will crash immediately if launched on a path containing a symlink, no idea why",
         "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/useful_urls.md",
         "https://chromium.woolyss.com/"
     ],
@@ -16,7 +14,20 @@
         }
     },
     "extract_dir": "chrome-win",
-    "bin": "chrome.exe",
+    "bin": [
+        [
+            "chrome.exe",
+            "chrome",
+            "--no-sandbox"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Chromium",
+            "--no-sandbox"
+        ]
+    ],
     "checkver": {
         "url": "https://omahaproxy.appspot.com/all.json",
         "jsonpath": "$[?(@.os=='win64')].versions[?(@.channel=='canary')].branch_base_position"
@@ -29,10 +40,7 @@
         }
     },
     "notes": [
-        "You will have to either generate or disable API keys to get rid of the popup regarding it.",
-        "To disable them, set the following environment variables (more info: https://chromium.woolyss.com/#google-api-keys):",
-        "GOOGLE_API_KEY=false",
-        "GOOGLE_DEFAULT_CLIENT_ID=false",
-        "GOOGLE_DEFAULT_CLIENT_SECRET=false"
+        "The browser uses the --no-sandbox command-line switch to bypass a crash on launch",
+        "This is due to chrome.exe being on a symlinked path (see: https://bugs.chromium.org/p/chromium/issues/detail?id=1278166)"
     ]
 }
