@@ -1,5 +1,5 @@
 {
-    "version": "2.21.5",
+    "version": "2.21.12",
     "description": "The modern Java bytecode editor",
     "homepage": "https://github.com/Col-E/Recaf",
     "license": "MIT",
@@ -10,8 +10,8 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/Col-E/Recaf/releases/download/2.21.5/recaf-2.21.5-J8-jar-with-dependencies.jar",
-    "hash": "65023ad714f7e2b55a45738ce78e7b8ceba4c57d7d2fe097dd313444559eb824",
+    "url": "https://github.com/Col-E/Recaf/releases/download/2.21.12/recaf-2.21.12-J8-jar-with-dependencies.jar",
+    "hash": "523599424c776d8a2cad629cb4234833b217ef1944542919cd197916b58aa6ee",
     "bin": [
         [
             "recaf-J8-jar-with-dependencies.jar",

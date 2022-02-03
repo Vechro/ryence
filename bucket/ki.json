@@ -1,5 +1,5 @@
 {
-    "version": "0.3.3",
+    "version": "0.4.5",
     "description": "Kotlin Language Interactive Shell",
     "homepage": "https://github.com/Kotlin/kotlin-interactive-shell",
     "license": "Apache-2.0",
@@ -9,8 +9,8 @@
             "java/openjdk"
         ]
     },
-    "url": "https://repo1.maven.org/maven2/org/jetbrains/kotlinx/ki-shell/0.3.3/ki-shell-0.3.3-archive.zip",
-    "hash": "sha1:12af2495c47dc372b0b880f7bf22529f2af8c81b",
+    "url": "https://repo1.maven.org/maven2/org/jetbrains/kotlinx/ki-shell/0.4.5/ki-shell-0.4.5-archive.zip",
+    "hash": "sha1:af656c34c6a76632d604123e2a589d255535053e",
     "extract_dir": "ki",
     "bin": "bin\\ki.bat",
     "checkver": {
