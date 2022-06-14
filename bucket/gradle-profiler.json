@@ -1,0 +1,15 @@
+{
+    "version": "0.18.0",
+    "description": "A tool for gathering profiling and benchmarking information for Gradle builds",
+    "homepage": "https://github.com/gradle/gradle-profiler",
+    "license": "Apache-2.0",
+    "url": "https://repo1.maven.org/maven2/org/gradle/profiler/gradle-profiler/0.18.0/gradle-profiler-0.18.0.zip",
+    "hash": "242f891590353161713c195f01a677d938cc74bb6f56832d2c76a6ab4a5a9d79",
+    "extract_dir": "gradle-profiler-0.18.0",
+    "bin": "bin\\gradle-profiler.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://repo1.maven.org/maven2/org/gradle/profiler/gradle-profiler/$version/gradle-profiler-$version.zip",
+        "extract_dir": "gradle-profiler-$version"
+    }
+}
