@@ -3,14 +3,14 @@
         "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/useful_urls.md",
         "https://chromium.woolyss.com/"
     ],
-    "version": "1075883",
+    "version": "1140473",
     "description": "An open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F1075883%2Fchrome-win.zip?alt=media",
-            "hash": "34a777089a7c8aaa9e83fb3d5f4164a04e054fa6703b2fc88e44fdde2719edb8"
+            "url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F1140473%2Fchrome-win.zip?alt=media",
+            "hash": "b60cd9530244272808cfac8a4139056f40b285e345021d9cbe87c48233017a6c"
         }
     },
     "extract_dir": "chrome-win",
